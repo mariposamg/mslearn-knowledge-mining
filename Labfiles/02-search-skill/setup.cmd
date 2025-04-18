@@ -2,9 +2,9 @@
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 rem Set values for your subscription and resource group
-set subscription_id=YOUR_SUBSCRIPTION_ID
-set resource_group=YOUR_RESOURCE_GROUP
-set location=YOUR_LOCATION_NAME
+set subscription_id=e9751f69-bcb1-4bb6-99bb-611fa8576df0
+set resource_group=ResourceGroup1
+set location=eastus
 
 rem Get random numbers to create unique resource names
 set unique_id=!random!!random!
@@ -38,4 +38,3 @@ echo  Admin Keys:
 call az search admin-key show --subscription !subscription_id! --resource-group !resource_group! --service-name ai102srch!unique_id!
 echo  Query Keys:
 call az search query-key list --subscription !subscription_id! --resource-group !resource_group! --service-name ai102srch!unique_id!
-
