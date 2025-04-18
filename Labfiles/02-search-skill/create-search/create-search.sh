@@ -3,7 +3,7 @@
 
 # Set values for your Search service
 url="https://ai102srch1813320986.search.windows.net"
-admin_key="bmeQoisDvjvHmoIA5lGuyBimN6QgCCI2QKDut3f4QGAzSeBcOMU6"
+admin_key=""
 
 echo "-----"
 echo "Creating the data source..."
